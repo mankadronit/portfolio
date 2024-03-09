@@ -193,33 +193,9 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    // {
-    //   image: require("./assets/images/saayaHealthLogo.webp"),
-    //   projectName: "Saayahealth",
-    //   projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    //   footerLink: [
-    //     {
-    //       name: "Visit Website",
-    //       url: "http://saayahealth.com/"
-    //     }
-    //     //  you can add extra buttons here.
-    //   ]
-    // },
-    // {
-    //   image: require("./assets/images/nextuLogo.webp"),
-    //   projectName: "Nextu",
-    //   projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    //   footerLink: [
-    //     {
-    //       name: "Visit Website",
-    //       url: "http://nextu.se/"
-    //     }
-    //   ]
-    // }
-  ],
+  title: "Projects",
+  subtitle: "SOME PERSONAL AND ACADEMIC PROJECTS I DEVELOPED",
+  projects: [],
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -287,7 +263,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
