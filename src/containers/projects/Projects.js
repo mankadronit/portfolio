@@ -4,6 +4,8 @@ import Button from "../../components/button/Button";
 import {openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
+import profile from "../../profile.json"
+
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
@@ -15,9 +17,10 @@ export default function Projects() {
   const {isDark} = useContext(StyleContext);
 
   useEffect(() => {
+    /* Hack since my own domain space not working to pull data from public
     const getRepoData = () => {
-      fetch("/profile.json")
-        .then(result => {
+      fetch("/profile.json", {method: 'GET'})
+        .then((result) => {
           if (result.ok) {
             return result.json();
           }
@@ -27,13 +30,17 @@ export default function Projects() {
           setrepoFunction(response.data.user.pinnedItems.edges);
         })
         .catch(function (error) {
+          console.log("ERROR!!!", error)
           console.error(
             `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
           );
           setrepoFunction("Error");
         });
     };
+
     getRepoData();
+    */
+    setrepoFunction(profile.data.user.pinnedItems.edges);
   }, []);
 
   function setrepoFunction(array) {

@@ -29,3 +29,5 @@ public/blogs.json
 .prettierrc
 .prettierignore
 .gitattributes
+
+src/profile.json
