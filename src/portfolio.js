@@ -106,13 +106,7 @@ const workExperiences = {
       companylogo: require("./assets/images/arcadiaLogo.png"),
       date: "May 2022 – Present",
       desc: "Arcadia is a healthcare technology company focused on helping healthcare providers and payers transform diverse data into a unified fabric of health.",
-      descBullets: [
-        "Implemented ETL pipelines, integrating data from EHRs, laboratory reports, and billing systems into Arcadia’s analytics platform for 15+ clients",
-        "Led development of a data profiling tool to identify errors during pipeline build phase.", 
-        "     ⇨ Achieved a 50% increase error identification rate, cutting cleanup ticket count by half",
-        "Transformed >40 terabyte data into unified clinical schema through Spark jobs",
-        "Achieved 30% reduction in pipeline run time by updating partition logic for time series connectors"
-      ]
+      descBullets: []
     },
     {
       role: "Data Engineer Coop",
